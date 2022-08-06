@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flex 布局</title>
+    <style>
+        body {
+            margin: 0;
+            /* 浏览器的视图高度 */
+            height: 100vh;
+            background-color: #eee;
+        }
+        /* * {
+            border: 1px solid black;
+        } */
+        
+        .yinYing {
+            box-shadow: rgb(0, 0, 0 / 20%) 0px 2px 1px -1px, rgb(0, 0, 0 / 14%) 0px 1px 1px 0px, rgb(0, 0, 0 / 12%) 0px 1px 3px 0px;
+        }
+        
+        .flex {
+            display: flex;
+        }
+        
+        .baiSe {
+            background-color: white;
+        }
+        
+        .flex1 {
+            flex: 1;
+        }
+        
+        .column {
+            flex-direction: column;
+        }
+        /* 边距8 */
+        
+        .mg8 {
+            margin: 8px;
+        }
+        /* 右边边距8 */
+        
+        .mgr8 {
+            margin-right: 8px;
+        }
+        /* 上边边距8 */
+        
+        .mgt8 {
+            margin-top: 8px;
+        }
+    </style>
+</head>
+
+<body class="flex">
+    <!-- 侧边栏 -->
+    <div style="width: 200px; z-index: 2" class="baiSe yinYing">
+        <!-- 头像栏 -->
+        <div class="flex">
+            <img src="https://kangwenchang.com/logo.png" width="40px" height="40px" alt="">
+        </div>
+    </div>
+
+    <!-- 主区域 -->
+    <div class="flex1 flex column"></div>
+    <!-- 头部栏 -->
+    <div style="height: 60px;z-index: 1;" class="baiSe yinYing"></div>
+    <!-- 内容区 -->
+    <div style="overflow:auto" class="flex1 flex">
+        <!-- 左区 占flex四分之三 -->
+        <div style="flex: 3" class="flex column mg8">
+            <!-- 数据区 -->
+            <div class="flex">
+                <!-- 数据块 -->
+                <div class="shuJu baiSe mgr8 yinYing"></div>
+                <div class="shuJu baiSe mgr8 yinYing"></div>
+                <div class="shuJu baiSe mgr8 yinYing"></div>
+                <div class="shuJu baiSe yinYing"></div>
+            </div>
+            <!-- 列表区 -->
+            <div class="flex column">
+                <!-- 列表项 -->
+                <div style="height: 160px" class="baiSe mgt8 yinYing"></div>
+                <div style="height: 160px" class="baiSe mgt8 yinYing"></div>
+                <div style="height: 160px" class="baiSe mgt8 yinYing"></div>
+
+            </div>
+        </div>
+        <!-- 右区 占flex四分之一 -->
+        <div style="flex: 1" class="flex column mgr8 mgt8">
+            <!-- 提示区 -->
+            <div style="height: 150px" class="baiSe yinYing"></div>
+            <!-- 消息区 -->
+            <div style="height: 300px" class="baiSe mgt8 yinYing"></div>
+        </div>
+    </div>
+</body>
+
+</html>
