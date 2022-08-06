@@ -30,3 +30,4 @@ git merge 0.2		//合并到0.2分支
 
 git fetch upstraem  //更新本地版本
 
+git push origin dazhen:dazhen   //建立远程分支，注意要是本地分支已经创建成功才行的。
