@@ -28,3 +28,5 @@ git checkout master	//切换到master分支
 
 git merge 0.2		//合并到0.2分支
 
+git fetch upstraem  //更新本地版本
+
