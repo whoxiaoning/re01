@@ -30,3 +30,21 @@ git merge 0.2		//合并到0.2分支
 
 git fetch upstraem  //更新本地版本
 
+git branch -d dazhen    //删除本地分支dazhen
+
+git push origin --delete dazhen     //删除远程分支dazhen 
+
+查看远程分支
+git branch -r
+
+删除远程分支
+git push origin --delete upcByAsin
+
+查看本地分支
+git branch 
+
+创建本地分支
+git branch test 
+
+创建远程分支
+git push --set-upstream origin  yxw_test
