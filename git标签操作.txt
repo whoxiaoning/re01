@@ -1,5 +1,5 @@
 //详细显示日志：
-git log --online --all --graph
+git log --oneline --all --graph
 
 //查看标签
 git tag
